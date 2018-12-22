@@ -1,4 +1,4 @@
-package com.Spring.Controller;
+﻿package com.Spring.Controller;
 
 import com.Spring.Model.UserModel;
 import org.springframework.stereotype.Controller;
@@ -13,7 +13,7 @@ public class LoginController {
     @ResponseBody
     public String Loginconfirm(UserModel user, Model model){
         if(user.getId().equals("admin")&&user.getPassword().equals("admin")){
-            System.out.println("登录成功:"+user.getId());
+            System.out.println("登录成功  :："+user.getId());
             model.addAttribute("name",user.getId());
             return "success";
 
