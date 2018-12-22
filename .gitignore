@@ -12,8 +12,10 @@
 .idea/
 .mvn/
 .settings/
+#忽略该文件
 log/
 test/
+out/
 characters/
 # Package Files #
 *.jar
